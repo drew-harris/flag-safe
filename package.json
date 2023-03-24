@@ -3,8 +3,19 @@
   "version": "0.0.1",
   "description": "Typesafe feature flags for NextJS and React",
   "main": "index.js",
+  "workspaces": [
+    "flagsafe",
+    "examples/*"
+  ],
+  "scripts": {
+    "dev": "turbo dev",
+    "build": "turbo build"
+  },
   "repository": "https://github.com/drew-harris/flag-safe",
   "author": "Drew Harris",
   "license": "MIT",
-  "private": true
+  "private": true,
+  "dependencies": {
+    "turbo": "^1.8.5"
+  }
 }
