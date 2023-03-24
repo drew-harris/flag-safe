@@ -9,13 +9,15 @@
   ],
   "scripts": {
     "dev": "turbo dev",
-    "build": "turbo build"
+    "build": "turbo build",
+    "publish-packages": "turbo run build && changeset version && changeset publish"
   },
   "repository": "https://github.com/drew-harris/flag-safe",
   "author": "Drew Harris",
   "license": "MIT",
   "private": true,
   "dependencies": {
+    "@changesets/cli": "^2.26.1",
     "turbo": "^1.8.5"
   }
 }
